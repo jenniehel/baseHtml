@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="item">
+        <h2>welcome</h2>
+        <div class="com">
+            <i class="fa-solid fa-bug" data-value="-2"></i>
+            <i class="fa-solid fa-heart"  data-value="-3"></i>
+            <i class="fa-solid fa-gift"  data-value="5"></i>
+            <i class="fa-solid fa-briefcase"  data-value="-4"></i>
+            <i class="fa-solid fa-cable-car"  data-value="2"></i>
+            <i class="fa-solid fa-crown"  data-value="6"></i>
+            <i class="fa-solid fa-cube"  data-value="2"></i>
+            <i class="fa-solid fa-motorcycle"  data-value="-3"></i>
+            <i class="fa-solid fa-ship"  data-value="-5"></i>
+        </div>
+
+    </div>
+    <script>
+        document.addEventListener("mousemove",parax);
+        function parax(e){
+            document.querySelectorAll(".fa-solid").forEach(function(move){
+                let move_v=move.getAttribute("data-value");
+                let x=(e.clientX*move_v)/200;
+                let y=(e.clientY*move_v)/200;
+                move.style.transform=`translateX(${x}px) translateY(${y}px)`;
+            })
+        }
+    </script>
+</body>
+
+</html>

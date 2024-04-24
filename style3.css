@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.cc{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.cloud{
+    background: url("./images/cloud.png") no-repeat center center / auto 120% ;
+    animation: cloud 40s infinite linear alternate;
+
+}
+.scap { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background: url("./images/scap.jpg") ;
+    background-position: 0px;
+    z-index: 10;
+}
+@keyframes cloud {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 80%;
+
+    }
+}
+
+.cloud {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 100; 
+ 
+}
+.content{
+    padding: 50px;
+    line-height: 8;
+    color: white;
+    background-color: rgb(127, 92, 244);
+}
+.describe{
+    text-wrap: nowrap;
+    font-size: 200px;
+    position: absolute;
+    top: 30%;
+    /* left: 50%; */
+      left: 50%;  
+
+    transform: translate(-50%,-50%);
+    z-index:30;
+    color: rgb(34, 143, 233); 
+    padding-left: 0;
+    
+}
+ 
