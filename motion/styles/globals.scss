@@ -1,0 +1,50 @@
+$primary-color: #151515;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+  }
+body {
+    background-color: $primary-color;
+    color: white;
+}
+/*
+
+scroll-snap-type 屬性用於定義滾動容器中的滾動行為，
+特別是在滾動結束時如何對齊滾動位置。
+該屬性有兩個主要值：
+x 和 y，分別用於水平和垂直方向的滾動
+其中，mandatory 值指示瀏覽器滾動結束時必須對齊到滾動容器的特定點。
+y mandatory 表示在垂直方向上滾動結束時必須對齊到滾動容器的某個點。
+//////////////////
+/// 
+scroll-snap-align 屬性用於定義在滾動結束時，滾動容器的特定元素如何對齊到滾動容器的邊界。其中，center 值表示在滾動結束時，元素將被置中對齊到滾動容器的邊界。
+
+舉例來說，如果你在一個水平滾動容器中使用 scroll-snap-align: center;，那麼當用戶停止滾動時，滾動容器中的元素將被置中對齊到滾動容器的邊界。
+
+這個屬性可以應用於滾動容器內的任何滾動元素，例如圖片、段落或其他 HTML 元素。
+*/ 
+html{
+    scroll-snap-type:y mandatory;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    overflow: hidden;
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
