@@ -9,10 +9,11 @@ import Navbar from "@/components/navbar/Navbar";
 import Parallax from "@/components/parallax/Parallax";
 import Portfolio from "@/components/portfolio/Portfolio";
 import Services from "@/components/services/Services";
-
+import MouseFollow from '../components/parallax/mouse'; 
 export default function Home() {
   return (
     <div>
+    <MouseFollow />
       <Cursor />
       <section id="Homepage">
         <Navbar />

@@ -1,15 +1,4 @@
-$primary-color: #151515;
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
-  }
-body {
-    background-color: $primary-color;
-    color: white;
-}
+$primary-color: #151515; 
 /*
 
 scroll-snap-type 屬性用於定義滾動容器中的滾動行為，
@@ -26,25 +15,51 @@ scroll-snap-align 屬性用於定義在滾動結束時，滾動容器的特定�
 
 這個屬性可以應用於滾動容器內的任何滾動元素，例如圖片、段落或其他 HTML 元素。
 */ 
-html{
-    scroll-snap-type:y mandatory;
-    scroll-behavior: smooth;
+ 
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-*{
+  * {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-section {
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  body {
+    background-color: #0c0c1d;
+    color: lightgray;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  section {
     height: 100vh;
     width: 100vw;
     scroll-snap-align: center;
     overflow: hidden;
   }
-
-a{
-    text-decoration: none;
-    color: inherit;
-    
-}
+  
+  @mixin mobile {
+    @media (max-width: 738px) {
+      @content;
+    }
+  }
+  @mixin tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin desktop {
+    @media (max-width: 1366px) {
+      @content;
+    }
+  }
