@@ -16,7 +16,7 @@ const Single = ({ item }) => {
         <div className={style.container}>
           <div className={style.wrapper}>
             <div className={style.imageContainer} ref={ref}>
-              <img src={item.img} alt="" />
+              <img src={item.img} alt="" style={{objectFit:"contain"}} />
             </div>
             <motion.div className={style.textContainer} style={{y}}>
               <h2>{item.title}</h2>

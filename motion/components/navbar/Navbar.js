@@ -16,7 +16,7 @@ export default function Navbar2() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 3 }}
                 >
-                    Lama Dev
+                    jenniehel
                 </motion.span>
                 {/* 社交媒體連結 */}
                 <div className={styles.social}>

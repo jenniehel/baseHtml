@@ -51,19 +51,24 @@ const Contact = () => {
     whileInView="animate"
   >
     <motion.div className={style.textContainer} variants={variants}>
-      <motion.h1 variants={variants}>Let’s work together</motion.h1>
+      <motion.h1 variants={variants}>休息一下<br/>等等看個訊息</motion.h1>
+ 
       <motion.div className={style.item} variants={variants}>
         <h2>Mail</h2>
         <span>jenny41449@gmail.com</span>
       </motion.div>
       <motion.div className={style.item} variants={variants}>
-        <h2>Address</h2>
-        <span>Hello street Taipei </span>
+        <h2>phone</h2>
+        <span>0981461039</span>
       </motion.div>
       <motion.div className={style.item} variants={variants}>
-        <h2>Phone</h2>
-        <span>+1 234 5678</span>
+        <h2>請鼓勵我</h2>
+        <span>愛妳/你喔!</span>
       </motion.div>
+      <motion.div className={style.item} variants={variants}>
+      <h2>真的可以發喔~</h2>
+      <span>讓我們互相了解~</span>
+    </motion.div>
     </motion.div>
     <div className={style.formContainer}>
       <motion.div

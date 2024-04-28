@@ -24,6 +24,13 @@
     h1 {
         font-size: 100px; 
     }
+    .dragon{
+      position: absolute; 
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: calc(100% - 200px);
+    }
     .mountains {
         background-image: url("/images/mountains.png");
         background-size: cover;

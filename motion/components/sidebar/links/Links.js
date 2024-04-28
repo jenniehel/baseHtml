@@ -32,12 +32,12 @@ const itemVariants={
 }
 const Links22 = () => {
     const items = [
-        "H1",
+        "Home",
         "Services",
-        "contact",
-        "about",
-        "about",
-        "about",
+        "Contact",
+        "Parallax",
+        "Portfolio", 
+        "Compass",
     ]
     return (
         <motion.dev className={styles.links} variants={Variants}>

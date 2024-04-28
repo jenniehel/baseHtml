@@ -44,21 +44,21 @@ const variants = {
     >
       <motion.div className={styles.textContainer} variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+           Bring some idea
+          <br />  give me 
         </p>
         <hr />
       </motion.div>
       <motion.div className={styles.titleContainer} variants={variants}>
         <div className={styles.title}>
           <img src="/images/people.webp" alt="" />
-          <h1>
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+          <h1> 
+            <motion.b whileHover={{ color: "orange" }}>Believe you </motion.b> can
           </h1>
         </div>
         <div className={styles.title}>
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b> Business.
+            <motion.b >and </motion.b> <motion.b whileHover={{ color: "orange" }}>you're halfway there.</motion.b>
           </h1>
           <button>WHAT WE DO?</button>
         </div>
@@ -68,12 +68,9 @@ const variants = {
           className={styles.box}
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>react/next</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+           功能強大且可重複性高
           </p>
           <button>Go</button>
         </motion.div>
@@ -81,12 +78,9 @@ const variants = {
           className={styles.box}
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>motion</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          希望我的頁面很華麗
           </p>
           <button>Go</button>
         </motion.div>
@@ -94,12 +88,9 @@ const variants = {
           className={styles.box}
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>API</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          希望可以寫很多功能
           </p>
           <button>Go</button>
         </motion.div>
@@ -107,12 +98,9 @@ const variants = {
           className={styles.box}
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>others</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+           希望可以寫很多有趣又不一樣的
           </p>
           <button>Go</button>
         </motion.div>

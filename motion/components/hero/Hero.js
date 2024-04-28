@@ -18,7 +18,7 @@ const textVariants = {
   scrollButton: {
     opacity: 0,
     y: 10,
-    transition: {
+    transition: { 
       duration: 2,
       repeat: Infinity,
     },
@@ -48,13 +48,13 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
+          <motion.h2 variants={textVariants}>謝宜蓁學習作品1</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UI designer
+          dragon Years Promtion
           </motion.h1>
           <div className={styles.buttons}>
             <motion.button variants={textVariants}>
-              See the Latest Works
+              web-developer
             </motion.button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
           </div>
@@ -75,7 +75,7 @@ const Hero = () => {
         Writer Content Creator Influencer
       </motion.div>
       <div className={styles.imageContainer}>
-        <img src="/images/hero.png" alt="" />
+        <img src="/images/dragon.png" alt="" />
       </div>
     </div>
   )

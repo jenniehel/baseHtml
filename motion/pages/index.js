@@ -16,15 +16,15 @@ export default function Home() {
 
     <div>
       <Cursor />
-      <section id="Homepage">
+      <section id="Home">
         <Navbar />
         <Hero />
       </section>
       <section id="Services">
-        <Parallax type="services" />
+        <Services type="services" />
       </section>
-      <section>
-        <Services />
+      <section id="Parallax">
+        <Parallax />
       </section>
       <section id="Portfolio">
         <Parallax type="portfolio" />
