@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Newsletter = () => {
 const Container = styled.div`
   height: 60vh;
   background-color: #fcf5f5;
@@ -44,6 +43,7 @@ const Button = styled.button`
   background-color: teal;
   color: white;
 `;
+const Newsletter = () => {
   return (
     <Container>
       <Title>Newsletter</Title>

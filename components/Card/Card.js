@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
 import { IoBag } from "react-icons/io5";
 const Container = styled.div`
-width:30%;
+width:200px;
 height:380px;
 border:1px solid grey;
 padding:15px;

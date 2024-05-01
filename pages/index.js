@@ -1,18 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
 import styled from "styled-components";
 import Product from "./Product/[sid].js";
-import Home from "./Home.js"; 
 import ProductLIst from "../components/ProductList/ProductLIst.js";
-// import ProductList from "./pages/ProductList";
-// import Register from "./pages/Register";
-// import Login from "./pages/Login";
-// import Cart from "./pages/Cart";
+import styles from "@/styles/Home.module.css";
+import Navbar from "@/components/Navbar";
+import Announcement from "@/components/Announcement";
+import Slider from "@/components/Slider";
+import Categories from "@/components/Categories";
+import Products from "../components/Products";
+const inter = Inter({ subsets: ["latin"] });
+import Newsletter from "@/components/Newsletter";
+const Container1 = styled.div`overflow-x:hidden;width:100vw;padding:30px;`
+const Container2 = styled.div`overflow-x:hidden;width:100vw;`
 export default function Index() {
-  const Container = styled.div`overflow-x:hidden;width:100vw;padding:30px;`
   return (
     <>
       <Head>
@@ -21,10 +23,17 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Home />
-      <Container>
+      <Container1>
+        <Announcement />
+        <Navbar />
+        <Slider />
+        <Products />
+        <Categories />
+        <Newsletter />
+      </Container1>
+      <Container2>
         <ProductLIst />
-      </Container>
+      </Container2>
     </>
   );
 }

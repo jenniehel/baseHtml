@@ -65,7 +65,7 @@ const Icon = styled.div`
     transform: scale(1.1);
   }
 `;
-const Product = ({ item,key }) => {
+const Product = ({ item,key0="" }) => {
  const router=useRouter()
   return (
     <Container> 

@@ -4,15 +4,14 @@ import styled from 'styled-components'
 import Category1 from '@/components/Category/Category01'
 import Category2 from '@/components/Category/Category02'
 import Category3 from '@/components/Category/Category03'
-const LContainer = styled.div` 
- width:30%;
+const LContainer = styled.div`  
 font-size:20px;
 line-height:1.3;
 position: relative;
 `
 const Fixed = styled.div`
 padding:1rem;
-width: inherit;
+width: 30vw;
 position:fixed;  
 height:100%;
 display:flex;

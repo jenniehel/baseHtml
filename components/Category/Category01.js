@@ -45,7 +45,7 @@ const Category = ({handleChange}) => {
                 <Input
                     handleChange={handleChange}
                     value="sandals"
-                    title="涼鞋"
+                    title="休閒鞋"
                     name="test"
                 />
                 <Input

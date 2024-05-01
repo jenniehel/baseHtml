@@ -64,8 +64,7 @@ const Product = () => {
     }
     const result = filteredData(products, selectCategory, query)
     return (
-        <Container>
-        {selectCategory}
+        <Container> 
             <Sidebar handleChange={handleChange} /> 
             <RContainer>
                 <Recommended handleClick={handleClick} />

@@ -4,7 +4,8 @@ import { FaShoppingCart } from "react-icons/fa";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../pages/responsive";
-
+import { Router, useRouter } from "next/router";
+// useRouter
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
@@ -60,13 +61,14 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
+  const router=useRouter();
   return (
     <Container>
       <Wrapper>
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input placeholder="Search" />
+            <Input placeholder="Search"  className="autoSearch"/>
             <IoIosSearch style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
         </Left>
@@ -74,7 +76,7 @@ const Navbar = () => {
           <Logo>LAMA.</Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
+          <MenuItem  onClick={()=>router.push("/Product")}> 產品分類(請按)</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
             <FaIdBadge >
